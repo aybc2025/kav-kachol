@@ -1,0 +1,78 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: var(--border);
+  border-radius: var(--r);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.list li + li {
+  border-top: var(--border);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  min-height: 60px;
+  padding: var(--s2) var(--s4);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background-color var(--t-color) ease;
+}
+
+.row:active {
+  background: var(--ice);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .row:hover {
+    background: var(--ice);
+  }
+}
+
+.row:focus-visible {
+  outline-offset: -3px;
+}
+
+.num {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--line);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  color: var(--muted);
+}
+
+.done .num {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--surface);
+}
+
+.current .num {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.sub {
+  font-size: var(--fs-xs);
+  color: var(--muted);
+}

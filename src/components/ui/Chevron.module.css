@@ -1,0 +1,8 @@
+.wrap {
+  display: inline-flex;
+  color: var(--muted);
+}
+
+[dir="rtl"] .wrap {
+  transform: scaleX(-1);
+}

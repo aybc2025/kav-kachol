@@ -1,0 +1,50 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  min-height: 60px;
+  padding: var(--s2) var(--s4);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background-color var(--t-color) ease;
+}
+
+a.row:active {
+  background: var(--ice);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a.row:hover {
+    background: var(--ice);
+  }
+}
+
+.row:focus-visible {
+  outline-offset: -3px;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.sub {
+  font-size: var(--fs-xs);
+  color: var(--muted);
+}
+
+.score {
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  color: var(--muted);
+}

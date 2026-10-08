@@ -1,0 +1,45 @@
+.zone {
+  fill: var(--blue-soft);
+}
+
+.band {
+  fill: var(--blue);
+  opacity: 0.18;
+}
+
+.call {
+  fill: var(--red);
+  opacity: 0.2;
+  animation: whistle var(--t-color) var(--ease-out) 2 alternate;
+}
+
+.circle {
+  fill: var(--blue-soft);
+  opacity: 0.8;
+}
+
+.dashed {
+  stroke: var(--blue);
+  stroke-width: 0.8;
+  stroke-dasharray: 2 1.5;
+}
+
+.bench {
+  stroke: var(--blue);
+  stroke-width: 3;
+}
+
+.dot {
+  fill: var(--blue);
+  opacity: 0.35;
+}
+
+/* The whistle: one short red flash on the line that decided the call. */
+@keyframes whistle {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 0.55;
+  }
+}

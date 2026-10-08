@@ -1,0 +1,40 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: var(--fs-xl);
+}
+
+.en {
+  color: var(--muted);
+  font-size: var(--fs-sm);
+}
+
+.text {
+  margin-block: var(--s3);
+  font-size: var(--fs-md);
+}
+
+.pills {
+  display: flex;
+  gap: var(--s2);
+}
+
+.pill {
+  padding: 2px var(--s2);
+  border-radius: var(--r);
+  background: var(--blue-soft);
+  color: var(--blue);
+  font-weight: 700;
+  font-size: var(--fs-xs);
+}
+
+.actions {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: var(--s3);
+  margin-top: var(--s5);
+}

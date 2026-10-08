@@ -1,0 +1,27 @@
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s4);
+}
+
+.heading {
+  font-size: var(--fs-xl);
+}
+
+.body {
+  font-size: var(--fs-md);
+  max-width: 60ch;
+}
+
+.note {
+  padding: var(--s3) var(--s4);
+  border: var(--border);
+  border-radius: var(--r);
+  background: var(--surface);
+  font-size: var(--fs-sm);
+}
+
+.noteTitle {
+  font-size: var(--fs-md);
+  margin-bottom: var(--s1);
+}

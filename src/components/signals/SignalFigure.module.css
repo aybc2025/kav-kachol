@@ -1,0 +1,57 @@
+.fig {
+  display: block;
+  margin-inline: auto;
+  height: auto;
+}
+
+.sm {
+  width: 72px;
+}
+
+.md {
+  width: 140px;
+}
+
+.torso {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+
+.band {
+  fill: var(--red);
+}
+
+.head {
+  fill: var(--ink);
+}
+
+.leg {
+  stroke: var(--ink);
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.halo {
+  fill: none;
+  stroke: var(--surface);
+  stroke-width: 11;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.arm {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.motion {
+  fill: none;
+  stroke: var(--blue);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

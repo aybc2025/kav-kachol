@@ -1,0 +1,95 @@
+.piece {
+  transition: transform var(--t-scene) var(--ease-in-out);
+  animation: appear 200ms var(--ease-out);
+}
+
+.body {
+  stroke: var(--surface);
+  stroke-width: 0.8;
+}
+
+.blue .body {
+  fill: var(--blue);
+}
+
+.dark .body {
+  fill: var(--ink);
+}
+
+.num {
+  fill: var(--surface);
+  font-size: 5.2px;
+  font-weight: 700;
+  font-family: var(--font-body);
+}
+
+.goalie .body {
+  fill: var(--surface);
+  stroke-width: 1.4;
+}
+
+.goalie.blue .body {
+  stroke: var(--blue);
+}
+
+.goalie.dark .body {
+  stroke: var(--ink);
+}
+
+.goalie.blue .num {
+  fill: var(--blue);
+}
+
+.goalie.dark .num {
+  fill: var(--ink);
+}
+
+.puck {
+  fill: var(--ink);
+  stroke: var(--surface);
+  stroke-width: 0.5;
+}
+
+.path {
+  fill: none;
+  stroke-width: 0.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: appear 300ms var(--ease-out);
+}
+
+.trace {
+  stroke: var(--ink);
+  stroke-dasharray: 1.6 1.1;
+}
+
+.skate {
+  stroke: var(--blue);
+  stroke-dasharray: 0.1 1.6;
+  stroke-width: 1;
+}
+
+.trace polyline,
+.skate polyline {
+  stroke-dasharray: none;
+}
+
+.label {
+  fill: var(--ink);
+  font-size: 6px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  paint-order: stroke;
+  stroke: var(--ice-sheet);
+  stroke-width: 2px;
+  stroke-linejoin: round;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

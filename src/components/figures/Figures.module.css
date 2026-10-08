@@ -1,0 +1,90 @@
+/* Scoreboard-style panels: ink board, light digits. */
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s3);
+  padding: var(--s4);
+  border-radius: var(--r);
+  background: var(--ink);
+  color: var(--surface);
+}
+
+.boardLabel {
+  color: var(--score-sub);
+  font-size: var(--fs-sm);
+}
+
+.clock {
+  font-family: var(--font-display);
+  font-size: 64px;
+  line-height: 1;
+  text-align: center;
+  padding-block: var(--s3);
+}
+
+.periods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+  gap: var(--s2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.period {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s1);
+  padding: var(--s3) var(--s2);
+  border-radius: var(--r);
+  background: var(--score-track);
+}
+
+.ot {
+  background: var(--red);
+}
+
+.periodName {
+  font-size: var(--fs-xs);
+  color: var(--score-sub);
+  text-align: center;
+}
+
+.ot .periodName {
+  color: var(--surface);
+}
+
+.periodTime {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  line-height: 1;
+}
+
+.points {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.points th,
+.points td {
+  padding: var(--s3) 0;
+  border-bottom: 1px solid var(--score-track);
+}
+
+.points tr:last-child th,
+.points tr:last-child td {
+  border-bottom: 0;
+}
+
+.points th {
+  text-align: start;
+  font-weight: 400;
+}
+
+.points td {
+  text-align: end;
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  line-height: 1;
+}

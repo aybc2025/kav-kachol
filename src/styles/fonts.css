@@ -1,0 +1,6 @@
+/* Self-hosted fonts (bundled by Vite from @fontsource), so the app works offline
+   and makes no runtime requests to Google Fonts. Each file carries every subset
+   with unicode-range, so the browser only downloads the Hebrew and Latin parts it needs. */
+@import "@fontsource/assistant/400.css";
+@import "@fontsource/assistant/700.css";
+@import "@fontsource/secular-one/400.css";

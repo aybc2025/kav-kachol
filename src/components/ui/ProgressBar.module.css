@@ -1,0 +1,18 @@
+.track {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.fill {
+  display: block;
+  height: 100%;
+  background: var(--blue);
+  transform-origin: right center;
+  transition: transform var(--t-scene) var(--ease-out);
+}
+
+[dir="ltr"] .fill {
+  transform-origin: left center;
+}

@@ -1,0 +1,17 @@
+.title {
+  font-size: var(--fs-xl);
+}
+
+.text {
+  margin: var(--s2) 0 var(--s5);
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s3);
+}
+
+.danger {
+  background: var(--red);
+}

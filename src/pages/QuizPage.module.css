@@ -1,0 +1,15 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--s2);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s4);
+  margin-top: var(--s4);
+}

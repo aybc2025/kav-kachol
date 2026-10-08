@@ -1,0 +1,39 @@
+/* Layout for the four tab screens: content above the fixed bottom nav. */
+.page {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: env(safe-area-inset-top) var(--s4) calc(var(--nav-h) + var(--s5) + env(safe-area-inset-bottom));
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s4);
+}
+
+.intro {
+  color: var(--muted);
+  font-size: var(--fs-sm);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: var(--border);
+  border-radius: var(--r);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.list > li + li {
+  border-top: var(--border);
+}
+
+.sectionTitle {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  color: var(--muted);
+  margin-top: var(--s2);
+}

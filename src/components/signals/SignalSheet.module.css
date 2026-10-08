@@ -1,0 +1,30 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s1);
+}
+
+.title {
+  margin-top: var(--s3);
+  font-size: var(--fs-xl);
+}
+
+.en {
+  color: var(--muted);
+  font-size: var(--fs-sm);
+}
+
+.facts {
+  margin: var(--s3) 0 var(--s5);
+}
+
+.facts dt {
+  margin-top: var(--s3);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  color: var(--muted);
+}
+
+.facts dd {
+  margin: 0;
+}

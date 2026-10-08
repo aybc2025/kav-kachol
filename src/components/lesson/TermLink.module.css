@@ -1,0 +1,14 @@
+/* Inline button that reads as a word, not a control. The tap area grows with
+   vertical padding without moving the line. */
+.term {
+  display: inline;
+  padding: 6px 0;
+  margin: -6px 0;
+  border: 0;
+  background: none;
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: underline dotted 2px;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}

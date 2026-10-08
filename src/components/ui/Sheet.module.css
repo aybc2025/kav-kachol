@@ -1,0 +1,36 @@
+.sheet {
+  margin: auto auto 0;
+  padding: 0;
+  width: 100%;
+  max-width: var(--content-max);
+  max-height: 85dvh;
+  border: 0;
+  border-radius: var(--r-sheet) var(--r-sheet) 0 0;
+  background: var(--surface);
+  color: var(--ink);
+  transform: translateY(0);
+  transition: transform var(--t-sheet-in) var(--ease-drawer);
+}
+
+@starting-style {
+  .sheet[open] {
+    transform: translateY(100%);
+  }
+}
+
+.sheet::backdrop {
+  background: var(--scrim);
+}
+
+.inner {
+  padding: var(--s3) var(--s4) calc(var(--s5) + env(safe-area-inset-bottom));
+}
+
+.grab {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin: 0 auto var(--s3);
+  border-radius: 3px;
+  background: var(--line);
+}

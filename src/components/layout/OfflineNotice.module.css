@@ -1,0 +1,11 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s2);
+  padding: var(--s2) var(--s4);
+  padding-top: calc(var(--s2) + env(safe-area-inset-top));
+  background: var(--ink);
+  color: var(--surface);
+  font-size: var(--fs-sm);
+}

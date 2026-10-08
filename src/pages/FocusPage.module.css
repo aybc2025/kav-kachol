@@ -1,0 +1,29 @@
+/* Full-screen layout for lessons and quizzes: no bottom nav, actions pinned to the bottom. */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--s4);
+  padding-top: env(safe-area-inset-top);
+}
+
+.content {
+  flex: 1;
+  padding-bottom: var(--s5);
+}
+
+.actions {
+  position: sticky;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s3);
+  padding: var(--s3) 0 calc(var(--s4) + env(safe-area-inset-bottom));
+  background: var(--ice);
+}
+
+.single {
+  grid-template-columns: 1fr;
+}

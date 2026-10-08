@@ -1,0 +1,29 @@
+.box {
+  padding: var(--s3) var(--s4);
+  border: var(--border);
+  border-radius: var(--r);
+  background: var(--surface);
+  animation: fade 160ms var(--ease-out);
+}
+
+.right {
+  color: var(--ok);
+}
+
+.wrong {
+  color: var(--red);
+}
+
+.text {
+  margin-top: var(--s1);
+  font-size: var(--fs-sm);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,20 @@
+.dots {
+  display: flex;
+  gap: 6px;
+  margin-top: var(--s3);
+}
+
+.dots span {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  transition: background-color var(--t-color) ease;
+}
+
+.done {
+  background: var(--blue);
+}
+
+.todo {
+  background: var(--line);
+}
