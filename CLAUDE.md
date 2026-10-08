@@ -10,14 +10,13 @@ no backend, no auth, no API keys. Progress lives in `localStorage` on the device
 npm install && npm run build
 ```
 
-Do this without asking. **This repo has never been built with Vite.** It was written in a
-sandbox with no npm registry access; the code was verified by bundling it with esbuild
-(React 19, CSS Modules, a stub for the PWA virtual module) and driving every screen in a
-headless phone-sized browser — no console errors, all 50 lesson steps and the quiz,
-persistence, reset and corrupted-storage paths exercised. The first real `npm run build`
-is still a verification step: fix errors and re-run until clean before doing anything else.
+Do this without asking. The code was written in a sandbox with no npm registry access and
+verified by bundling it with esbuild and driving every screen in a headless phone-sized
+browser. The first real Vite build ran in GitHub Actions on 2026-10-08 and passed, and the
+site deployed to Pages. No local `npm install` has happened yet, so treat the first local
+build as a check too: fix errors and re-run until clean before doing anything else.
 
-Likely first-build failure points:
+If a build breaks after dependency updates, look here first:
 - `virtual:pwa-register/react` (used in `src/components/layout/UpdateBanner.jsx`) needs
   `vite-plugin-pwa` and `workbox-window` installed; both are in devDependencies.
 - Peer-dependency ranges between `vite` ^7, `@vitejs/plugin-react` ^5 and
