@@ -48,6 +48,9 @@ export default defineConfig({
         'icons/icon-512-maskable.png',
       ],
       manifest: {
+        // Explicit app identity. Without it Chrome uses start_url, and a stale record from an
+        // earlier install attempt made Android report "already installed" with no app present.
+        id: `${BASE}app`,
         name: 'קו כחול — חוקי ההוקי',
         short_name: 'קו כחול',
         description: 'לימוד חוקי הוקי קרח בעברית',
